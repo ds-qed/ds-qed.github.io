@@ -33,6 +33,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         .intro {
@@ -51,7 +52,8 @@
 
         .services {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-bottom: 40px;
         }
 
@@ -60,7 +62,9 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 30%;
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
             text-align: center;
         }
 
@@ -74,6 +78,7 @@
             padding: 20px;
             text-align: center;
             border-radius: 8px;
+            margin-top: 20px;
         }
 
         .cta h2 {
@@ -100,6 +105,32 @@
             color: white;
             text-align: center;
             padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Медиазапросы для мобильных устройств */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .intro h2 {
+                font-size: 1.8em;
+            }
+
+            .intro p {
+                font-size: 1em;
+            }
+
+            .service-item {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+
+            .cta a {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
