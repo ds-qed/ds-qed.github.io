@@ -170,16 +170,43 @@
     <section class="cta">
         <div class="container">
             <h2>Начните прямо сейчас!</h2>
-            <a href="#">Свяжитесь с нами</a>
+            <a href="#registration-form">Свяжитесь с нами</a>
         </div>
     </section>
 
     <footer>
+        <div id="registration-form"></div>
         <div class="container">
             <p>&copy; 2024 QED Agency. Все права защищены.</p>
+            <p>Телефон: +375 (29) 123 91 45</p>
+            <italic>УНП: KВ3431323</italic>
         </div>
     </footer>
-</body>
 
+    <script>
+      document.querySelectorAll(".faq-item h3").forEach((item) => {
+        item.addEventListener("click", () => {
+          const answer = item.nextElementSibling;
+          answer.style.display =
+            answer.style.display === "none" || answer.style.display === ""
+              ? "block"
+              : "none";
+        });
+      });
+    </script>
+
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="https://js.hsforms.net/forms/v2.js"
+    ></script>
+    <script>
+      hbspt.forms.create({
+        region: "eu1",
+        portalId: "145374742",
+        formId: "33ba13d0-a422-4458-a11a-2a54a3a3dd26",
+        target: "#registration-form",
+      });
+    </script>
+  </body>
 </html>
-
