@@ -1,185 +1,553 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      QED Agency - Помогаем вашему бизнесу расти с помощью Google Maps
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="QED Agency - Помогаем вашему бизнесу расти с помощью Google Maps"
+    />
+    <meta name="keywords" content="google maps" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QED Agency - Помогаем Бизнесу на Google Maps</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <!-- Animation CSS File -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Material Design Iconic -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
 
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+  <body>
+    <div id="preloader"></div>
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .intro h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        .intro p {
-            font-size: 1.2em;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-
-        .service-item {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            margin: 10px;
-            min-width: 250px;
-            text-align: center;
-        }
-
-        .service-item h3 {
-            margin-bottom: 15px;
-        }
-
-        .cta {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
-        .cta h2 {
-            margin-bottom: 20px;
-        }
-
-        .cta a {
-            background-color: white;
-            color: #0073e6;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
-        }
-
-        .cta a:hover {
-            background-color: #005bb5;
-            color: white;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        /* Медиазапросы для мобильных устройств */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .intro h2 {
-                font-size: 1.8em;
-            }
-
-            .intro p {
-                font-size: 1em;
-            }
-
-            .service-item {
-                flex: 1 1 100%;
-                margin: 10px 0;
-            }
-
-            .cta a {
-                padding: 10px 20px;
-                font-size: 1em;
-            }
-        }
-    </style>
-</head>
-
-<body>
     <header>
+      <div class="header">
         <div class="container">
-            <h1>QED Agency</h1>
-            <p>Помогаем вашему бизнесу расти с помощью Google Maps</p>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Главная<span class="sr-only">(текущая)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactus">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
 
-    <section class="intro">
+    <!-- Banner Carousel -->
+      <div class="banner-carousel-item">
         <div class="container">
-            <h2>Ваш бизнес на карте!</h2>
-            <p>Мы предоставляем полный спектр услуг для регистрации и оптимизации вашего бизнеса на Google Maps. Наши эксперты помогут вам стать видимыми для миллионов клиентов.</p>
+          <div class="row">
+            <div
+              class="col-xl-6 col-md-12 col-sm-12 col-12 wow fadeInUp"
+              data-wow-duration="1000ms"
+            >
+              <h1 class="title-h1">QED Agency</h1>
+              <p class="after-title">
+                QED (Quod Erat Demonstrandum) — лат. "Что и требовалось
+                доказать".
+              </p>
+              <p class="description">
+                Мы помогаем вашему бизнесу расти через Google Maps: вас находят,
+                вам доверяют, у вас покупают. Рост виден сразу.
+                <i>Что и требовалось доказать.</i>
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="box-banner">
+          <div class="thumb-banner">
+            <video class="logo" autoplay muted loop playsinline>
+              <source src="video/logo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+    <section class="clients ml-4" id="clients">
+      <div class="clients__content">
+        <h2 class="title-h2">Наши клиенты:</h2>
+        <div class="clients__slider">
+          <div class="clients__track">
+            <img
+              src="./img/clients/client-1.png"
+              alt="Client 1"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-2.png"
+              alt="Client 2"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-3.png"
+              alt="Client 3"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-4.png"
+              alt="Client 4"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-5.png"
+              alt="Client 5"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-6.png"
+              alt="Client 6"
+              class="clients__image"
+            />
+
+            <img
+              src="./img/clients/client-1.png"
+              alt="Client 1"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-2.png"
+              alt="Client 2"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-3.png"
+              alt="Client 3"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-4.png"
+              alt="Client 4"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-5.png"
+              alt="Client 5"
+              class="clients__image"
+            />
+            <img
+              src="./img/clients/client-6.png"
+              alt="Client 6"
+              class="clients__image"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="services">
-        <div class="container">
-            <div class="service-item">
-                <h3>Регистрация на Google Maps</h3>
-                <p>Быстрая и качественная регистрация вашего бизнеса на Google Maps.</p>
+    <!-- About Us -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+            <div class="img-about">
+              <div class="img-about-item">
+                <div class="thumb-back">
+                  <img
+                    class="thumb-back-img"
+                    src="img/about1.png"
+                    alt="Image Back"
+                  />
+                </div>
+              </div>
+              <div>
+                <div
+                  class="thumb-front wow fadeInUp"
+                  data-wow-duration="1000ms"
+                >
+                  <img
+                    class="thumb-front-img"
+                    src="img/about2.png"
+                    alt="Image Front"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="service-item">
-                <h3>Оптимизация профиля</h3>
-                <p>Увеличиваем видимость вашего профиля и привлекаем больше клиентов.</p>
-            </div>
-            <div class="service-item">
-                <h3>Поддержка и Консультации</h3>
-                <p>Постоянная поддержка и консультации для достижения максимального результата.</p>
-            </div>
+          </div>
+          <div class="col-xl-5 col-md-5 col-sm-12 col-12">
+            <p class="before-title scnd">О нас</p>
+            <h2 class="title-h2">
+              QED - команда, которая любит свою работу и умеет добиваться
+              результата.
+            </h2>
+
+            <p class="description">
+              Мы помогаем бизнесам расти через Google Maps — просто, прозрачно и
+              с фокусом на результат. В команде есть всё, что нужно:
+              техспециалисты, переводчики, аккаунт-менеджеры и просто увлечённые
+              люди, которым важно, чтобы всё работало честно и эффективно.
+              <strong
+                >Мы работаем без авансов — вы платите только за
+                результат.</strong
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="cta">
-        <div class="container">
-            <h2>Начните прямо сейчас!</h2>
-            <a href="#">Свяжитесь с нами</a>
+    <!-- Count -->
+    <section class="section section-count">
+      <div class="container text-center box-count">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-count"
+        >
+          <div class="col mb-2">
+            <p class="title-count counter">120</p>
+            <p class="text-count">Счастличых Клиентов</p>
+          </div>
+          <div class="col mb-2">
+            <p class="title-count counter">250</p>
+            <p class="text-count">Успешных Регистраций</p>
+          </div>
+          <div class="col mb-2">
+            <p class="title-count counter">20</p>
+            <p class="text-count">Восстановленных бизнесов</p>
+          </div>
+          <div class="col mb-2">
+            <p class="title-count counter">300</p>
+            <p class="text-count">Положительных отзывов</p>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Get a Free -->
+    <section id="contactus" class="section section-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="before-title">Просто напишите нам в директ (instagram: @qedagency)</p>
+            <h2 class="title-h2">Бесплатная консультация.</h2>
+            <a href="https://www.instagram.com/qedagency" target="_blank" class="btn btn-primary">Начать сотрудничество</a>
+          </div>
+        </div>
+      </div>
+      <div class="box-action">
+        <div class="thumb-action">
+          <img
+            class="thumb-action-img"
+            src="img/cta-bg.png"
+            alt="Image Newsletter"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section section-services">
+      <div class="container">
+        <p class="before-title text-center">Что у нас отлично получается?</p>
+        <h2 class="title-h2 text-center">Мы заботимся о вашем бизнесе</h2>
+
+        <div class="row-services">
+          <div class="col-services">
+            <img src="img/g-icon.png" alt="" />
+            <h3 class="title-h3">Регистрация на Google Maps</h3>
+            <p class="description">
+              Быстрая и качественная регистрация вашего бизнеса на Google Maps.
+              Оптимизация профиля: Увеличиваем видимость вашего профиля и
+              привлекаем больше клиентов. Поддержка и Консультации: Постоянная
+              поддержка и консультации для достижения максимального результата.
+            </p>
+          </div>
+          <div class="col-services col-services-center">
+            <img src="img/direct-icon.png" alt="" />
+            <h3 class="title-h3">
+              Настройка и ведение рекламных кампаний в Яндекс.Директ
+            </h3>
+            <p class="description">
+              Наша команда специалистов поможет вам настроить и запустить
+              эффективные рекламные кампании в Яндекс.Директ. Мы обеспечим
+              точное таргетирование на вашу целевую аудиторию, оптимизируем
+              расходы и увеличим конверсию. В результате вы получите
+              качественных клиентов и рост продаж. Мы предлагаем комплексное
+              ведение кампаний — от подбора ключевых слов и написания объявлений
+              до анализа результатов и корректировки стратегии.
+            </p>
+          </div>
+          <div class="col-services">
+            <img src="img/seo-icon.png" alt="" />
+            <h3 class="title-h3">SEO для сайта</h3>
+            <p class="description">
+              Наша команда профессионалов поможет вашему сайту занять лидирующие
+              позиции в поисковых системах. Мы проведем полный аудит,
+              оптимизируем структуру и контент под ключевые запросы, что
+              позволит увеличить органический трафик и привлечь новых клиентов.
+              Мы обеспечим комплексный подход — от технической оптимизации до
+              анализа результатов и корректировки стратегии продвижения для
+              стабильного роста вашего бизнеса.
+            </p>
+          </div>
+          <div class="col-services">
+            <img src="img/smm-icon.png" alt="" />
+            <h3 class="title-h3">SMM: продвижение в социальных сетях</h3>
+            <p class="description">
+              Хотите, чтобы ваш бренд стал популярным в социальных сетях? Мы
+              создадим стратегию продвижения в таких платформах, как Instagram,
+              Facebook, ВКонтакте и TikTok, учитывая специфику вашей аудитории.
+              Разработка контент-плана, создание креативных постов, привлечение
+              новых подписчиков и ведение рекламных кампаний — мы обеспечим рост
+              узнаваемости бренда и вовлеченности ваших клиентов. Начните
+              эффективно использовать социальные сети для продвижения вашего
+              бизнеса!
+            </p>
+          </div>
+          <div class="col-services">
+            <img src="img/email-icon.png" alt="" />
+            <h3 class="title-h3">
+              Email-маркетинг: создание и автоматизация рассылок
+            </h3>
+            <p class="description">
+              Повысьте лояльность и удержание клиентов с помощью грамотных
+              email-рассылок. Мы создадим стратегию персонализированных писем,
+              которая будет эффективно взаимодействовать с вашей аудиторией. От
+              создания уникального контента до настройки автоматических цепочек
+              писем — наш подход гарантирует высокие показатели открываемости и
+              откликов. Начните получать максимум пользы от базы подписчиков и
+              стимулировать продажи с нашей помощью.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="section section-case">
+      <div class="container">
+        <div class="row justify-content-end portfolio">
+          <div class="col-md-12 col-xl-4">
+            <p class="before-title">Как мы работаем?</p>
+            <h2 class="title-h2">Алгоритм нашей работы:</h2>
+            <ol class="description">
+              <li>Видеозвонок с нами — знакомство и обсуждение деталей.</li>
+              <li>
+                Переговоры с Google — мы согласуем условия и готовим всё
+                необходимое, пока вы отдыхаете.
+              </li>
+              <li>
+                Видеоверификация бизнеса — мы созваниваемся вместе с оператором
+                Google и показываем ваш бизнес в прямом эфире.
+              </li>
+              <li>
+                Оплата — <strong></strong>вы оплачиваете услугу только после успешной
+                верификации, когда увидите свой бизнес на Google Картах. </strong>
+              </li>
+              <li>
+                Передача прав — мы передаём вам все доступы и права на
+                управление бизнесом.
+              </li>
+            </ol>
+            <a href="https://www.instagram.com/qedagency" target="_blank" class="btn btn-primary">Начать сотрудничество</a>
+          </div>
+        </div>
+      </div>
+      <div class="box-case">
+        <div class="row row-cols-3 row-case">
+          <div class="col col-case">
+            <div class="case-item case-1">
+              <div class="team-info">
+                <p class="team-name">
+                  <a href="portfolio-details.html" title=""
+                    >Видеозвонок с нами — короткое знакомство и обсуждение
+                    деталей</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-case">
+            <div class="case-item case-2">
+              <div class="team-info">
+                <p class="team-name">
+                  <a href="portfolio-details.html" title=""
+                    >Мы ведем переговоры с Google — согласование условий и
+                    подготовки, пока вы отдыхаете.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-case">
+            <div class="case-item case-3">
+              <div class="team-info">
+                <p class="team-name">
+                  <a href="portfolio-details.html" title=""
+                    >Видеоверифкация бизнеса — мы созванимаемся с вами вместе с
+                    оператором гугл и показываем ваш бизнес.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-case">
+            <div class="case-item case-5">
+              <div class="team-info">
+                <p class="team-name">
+                  <a href="portfolio-details.html" title=""
+                    >Оплата — вы оплачиваете услуги только после успешной
+                    верификации, когда увидете свой бизнес на гугл картах.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-case">
+            <div class="case-item case-4">
+              <div class="team-info">
+                <p class="team-name">
+                  <a href="portfolio-details.html" title=""
+                    >Передача прав — мы передаем вам все правы.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 QED Agency. Все права защищены.</p>
+      <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div
+              class="row justify-content-between align-items-center footer-nav"
+            >
+              <div class="col-xl-2 col-md-2 col-sm-12 col-12">
+                <a class="navbar-brand" href="index.html">
+                  <img width="48" height="48" src="img/logo-qed.png" alt="QED Agency" />
+                </a>
+              </div>
+              <div class="col-xl10 col-md-10 col-sm-12 col-12">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactus">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="container">
+          <div
+            class="row justify-content-between align-items-center footer-bottom"
+          >
+            <div class="col-6">&copy; Copyright 2025 QED Agency</div>
+            <!-- <div class="col-6">
+              <ul class="list-footer">
+                <li class="list-footer-item">
+                  <a href="" class="list-footer-link">Privacy Policy</a>
+                </li>
+                <li class="list-footer-item">
+                  <a href="" class="list-footer-link">Terms and Conditions</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
 
+    <!-- Social Networks Fixed -->
+    <ul class="social-networks">
+      <li class="social-networks-item">
+        <a href="" class="social-networks-link" target="https://www.instagram.com/qedagency"
+          ><i class="zmdi zmdi-instagram"></i> instagram</a
+        >
+      </li>
+    </ul>
+
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              We are the Creative Digital Team
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/lM02vNMRRB0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/plugins.js"></script>
+  </body>
 </html>
-
